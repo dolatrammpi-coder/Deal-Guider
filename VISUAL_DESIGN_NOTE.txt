@@ -1,0 +1,1 @@
+Homepage redesigned to closely match the provided reference: large brand header, utility bar, search/navigation, bright product hero, category tiles, six-column desktop product grid, feature strip and dark footer. Product visuals are original illustrative SVGs.
