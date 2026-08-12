@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Amazon Products — DealGuide India</title>
-<meta name="description" content="Explore selected Amazon products with product information and affiliate links.">
+<meta name="description" content="Explore selected Amazon products on DealGuide India.">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" href="assets/dealguide-header-logo.png">
 <style>
@@ -25,15 +25,17 @@ body{margin:0;background:#f7f9fc;color:#12213d;font-family:Inter,system-ui,-appl
 .intro h1{margin:0 0 7px;font-size:27px}
 .intro p{margin:0;color:#738094;font-size:12px;line-height:1.6}
 .notice{margin-top:12px;padding:11px;background:#fff5cf;border:1px solid #e7d88e;border-radius:9px;font-size:11px}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:18px 0 28px}
-.card{background:#fff;border:1px solid #e0e6ee;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px rgba(10,40,80,.07)}
-.image{height:320px;display:flex;align-items:center;justify-content:center;background:#fff;padding:20px}
-.image img{max-width:100%;max-height:100%;object-fit:contain}
-.info{padding:18px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:18px 0 30px}
+.card{background:#fff;border:1px solid #e0e6ee;border-radius:14px;overflow:hidden;box-shadow:0 5px 18px rgba(10,40,80,.07)}
+.visual{height:190px;background:#f8fafc;display:flex;align-items:center;justify-content:center;flex-direction:column;border-bottom:1px solid #edf0f4}
+.retailer{font-size:13px;font-weight:900;letter-spacing:2px;color:#68768a}
+.bag{font-size:38px;margin-top:10px}
+.info{padding:14px}
 .label{font-size:10px;font-weight:900;color:#778397;text-transform:uppercase}
-h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
-.text{font-size:12px;color:#738094;line-height:1.6}
-.buy{display:block;margin-top:14px;background:#ff7100;color:#fff;text-align:center;text-decoration:none;padding:11px;border-radius:8px;font-size:12px;font-weight:900}
+.card h2{font-size:13px;line-height:1.4;margin:6px 0 8px}
+.card p{font-size:10px;color:#778397;line-height:1.5}
+.asin{font-size:9px;color:#8792a3;margin:5px 0}
+.buy{display:block;margin-top:12px;background:#ff7100;color:#fff;text-align:center;text-decoration:none;padding:10px;border-radius:7px;font-size:10px;font-weight:900}
 .footer{background:#06224a;color:#dce8f8;margin-top:28px;padding:28px 4%}
 .footer-in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}
 .footer h3{font-size:13px;margin:0 0 10px}
@@ -41,12 +43,17 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 .footer p{font-size:11px;color:#9eb1c9;line-height:1.6}
 .footer-logo{width:170px;max-width:100%}
 @media(max-width:800px){
-.top{font-size:9px;padding:0 10px}.top span:nth-child(n+2){display:none}
+.top{font-size:9px;padding:0 10px}
+.top span:nth-child(n+2){display:none}
 .nav{height:auto;min-height:76px;padding:5px 8px;display:grid;grid-template-columns:repeat(5,1fr);gap:3px}
 .nav a{font-size:9px;text-align:center;padding:8px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .search{grid-column:1/-1;width:100%;margin:2px 0 0}
-.grid{grid-template-columns:1fr}
+.grid{grid-template-columns:repeat(2,1fr);gap:8px}
 .footer-in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:500px){
+.grid{grid-template-columns:1fr}
+.visual{height:210px}
 }
 </style>
 </head>
@@ -77,36 +84,1411 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 </nav>
 
 <main class="wrap">
-
 <section class="intro">
 <h1>Explore Amazon Products</h1>
-<p>Discover selected products with practical information and direct links to current Amazon listings. Prices, sellers and availability may change and should be verified on Amazon before purchase.</p>
-<div class="notice">ⓘ Some links may be affiliate links. See our <a href="stage2/disclosure.html">Affiliate Disclosure</a>.</div>
+<p>Browse selected Amazon products through DealGuide. Product information, current price, seller and availability should be verified on Amazon before purchase.</p>
+<div class="notice">ⓘ Some links may be affiliate links. <a href="stage2/disclosure.html">Read Affiliate Disclosure →</a></div>
 </section>
 
 <div class="grid">
 
 <article class="card">
-<div class="image">
-<img src="assets/products-realistic.jpg" alt="Amazon product" loading="lazy">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
 </div>
 <div class="info">
 <div class="label">Amazon Product</div>
-<h2>Featured Amazon Product</h2>
-<p class="text">View the current Amazon listing for product details, price, seller and availability.</p>
-<a class="buy" href="https://link.amazon/B0ciqqVc0" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+<h2>Nutripro Bullet Juicer Grinder Blades</h2>
+<div class="asin">ASIN: B09J2T124D</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B09J2T124D/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
 </div>
 </article>
 
 <article class="card">
-<div class="image">
-<img src="assets/products-realistic.jpg" alt="Amazon product" loading="lazy">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
 </div>
 <div class="info">
 <div class="label">Amazon Product</div>
-<h2>Featured Amazon Product</h2>
-<p class="text">View the current Amazon listing for product details, price, seller and availability.</p>
-<a class="buy" href="https://link.amazon/B07aw8IXt" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+<h2>Butterfly Premium Vegetable Chopper Blue</h2>
+<div class="asin">ASIN: B085F2HVF9</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B085F2HVF9/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Aliston Weighing Accuracy Precision Function</h2>
+<div class="asin">ASIN: B083C6XMKQ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B083C6XMKQ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Portable Sealing Machine Handheld Warranty</h2>
+<div class="asin">ASIN: B0CZ23FJJT</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CZ23FJJT/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Electric Stainless Portable Cool Touch Single Touch</h2>
+<div class="asin">ASIN: B0F54GKQ38</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0F54GKQ38/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stovekraft Coffee Maker Brewster</h2>
+<div class="asin">ASIN: B07WJ4NG21</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07WJ4NG21/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Lifelong Automatic Temperature Regulation Llecm18</h2>
+<div class="asin">ASIN: B0DK1WFTQK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DK1WFTQK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Stainless Potato Vegetable Masher Effortless</h2>
+<div class="asin">ASIN: B0BRSXGY2J</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BRSXGY2J/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stovekraft Steamer Stainless Induction</h2>
+<div class="asin">ASIN: B0D2KRHS4H</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D2KRHS4H/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Chopper Push Vegetable Accessories Vegetables</h2>
+<div class="asin">ASIN: B0G821YMW4</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0G821YMW4/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Electric Stainless Shut Off Feature</h2>
+<div class="asin">ASIN: B07WMS7TWB</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07WMS7TWB/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Wonderchef Swift Brew Coffee Machine</h2>
+<div class="asin">ASIN: B0F1YFJ643</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0F1YFJ643/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Cookwell Multipurpose Nonstick Stainless Steamer</h2>
+<div class="asin">ASIN: B0FGJY28NW</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FGJY28NW/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stovekraft Plastic Chopper Blades</h2>
+<div class="asin">ASIN: B01LWYDEQ7</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01LWYDEQ7/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stovekraft Aluminium Gift Pieces</h2>
+<div class="asin">ASIN: B00QEYUWPO</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00QEYUWPO/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Philips Fryer Na120 00 Technology</h2>
+<div class="asin">ASIN: B0D14BB5XY</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D14BB5XY/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Swapkart Dispenser Countertop Bathroom Multi Color</h2>
+<div class="asin">ASIN: B0F9FQXX9W</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0F9FQXX9W/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Grinder Electric Portable Powerful Stainless</h2>
+<div class="asin">ASIN: B0H65R11VW</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0H65R11VW/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Turbo Automatic One Touch Operation Efficient</h2>
+<div class="asin">ASIN: B0GGH2GM8D</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0GGH2GM8D/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Milton Stainless Casserole Stackable Microwave</h2>
+<div class="asin">ASIN: B0B6RJSH2S</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B6RJSH2S/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stovekraft Cruise 1800 Watt Induction</h2>
+<div class="asin">ASIN: B01GFTEV5Y</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01GFTEV5Y/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Milton Express Aluminium Indicators Non Stick</h2>
+<div class="asin">ASIN: B0CGVBWMK1</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CGVBWMK1/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Ganesh Vegetable Slicer Cutter Kitchen</h2>
+<div class="asin">ASIN: B07MQ1QX3F</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07MQ1QX3F/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Satvikaya Containers Organizers Accessories Space Saving</h2>
+<div class="asin">ASIN: B0DVLBTKPH</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DVLBTKPH/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Multipurpose 12173 Stainless Boiling</h2>
+<div class="asin">ASIN: B01I1LDZGA</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01I1LDZGA/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Borosil Electric Technology Chop N Store Vegetable</h2>
+<div class="asin">ASIN: B01M5B0TPW</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01M5B0TPW/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Electric Stainless Effortlessly Vegetables</h2>
+<div class="asin">ASIN: B0B21PFDJT</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B21PFDJT/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Grand Vegetables Stainless Transparent</h2>
+<div class="asin">ASIN: B0B257ZYVB</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B257ZYVB/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Cookwell Bullet Mixer Grinder Silver</h2>
+<div class="asin">ASIN: B097XJQZ8H</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B097XJQZ8H/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Variable Temperature Settings Vegetable</h2>
+<div class="asin">ASIN: B071P7183Y</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B071P7183Y/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Ganesh Vegetable Dicer Cutting Blades</h2>
+<div class="asin">ASIN: B01BVDS1BE</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01BVDS1BE/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Healthifry Circulation Technology Non Stick</h2>
+<div class="asin">ASIN: B0B8XNPQPN</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B8XNPQPN/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Delite Vegetable Settings Stainless</h2>
+<div class="asin">ASIN: B0D2J66BP8</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D2J66BP8/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Prestige Pgmfb Sandwich Toaster Plates</h2>
+<div class="asin">ASIN: B00935MGKK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00935MGKK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon 2 Slice Pop Up Toaster Black</h2>
+<div class="asin">ASIN: B06XPYRWV5</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B06XPYRWV5/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Portable Vegetable Stainless Chopping Vegetables</h2>
+<div class="asin">ASIN: B0FCSN3CJZ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FCSN3CJZ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Setting Whisking Warranty 33554</h2>
+<div class="asin">ASIN: B0977CGNJJ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0977CGNJJ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Onsitego Extended Warranty Appliances 2501 3000</h2>
+<div class="asin">ASIN: B0BVQJWZ7H</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BVQJWZ7H/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Hr2612 00 Unbreakable Food Grade Technology</h2>
+<div class="asin">ASIN: B0H4BTVWTB</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0H4BTVWTB/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Scotch Brite Plastic Kitchen Wiper Grey</h2>
+<div class="asin">ASIN: B07DWKC8TB</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07DWKC8TB/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>12For Collection Stainless Container Multipurpose</h2>
+<div class="asin">ASIN: B0B65B9MXJ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B65B9MXJ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Stainless Boiling Instant Noodles</h2>
+<div class="asin">ASIN: B09Y5FZK9N</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B09Y5FZK9N/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Xiran Fridge Organizer Containers Vegetables</h2>
+<div class="asin">ASIN: B0BQZ25WQX</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BQZ25WQX/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Crae Weighing Fertilizer Measurement Sf 400 Wht</h2>
+<div class="asin">ASIN: B0F9YKYW5N</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0F9YKYW5N/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Prestige Electric Kettle Pkoss 1500Watts</h2>
+<div class="asin">ASIN: B01MQZ7J8K</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01MQZ7J8K/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Clazkit Strainer Vegetable Bowl Unbreakable</h2>
+<div class="asin">ASIN: B0C7VCGG2K</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0C7VCGG2K/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Toaster Griller Shut Off Thermostat Tempered</h2>
+<div class="asin">ASIN: B0FDQKQ638</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FDQKQ638/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Wonderchef Nutri Blend Smoothie Unbreakable Warranty</h2>
+<div class="asin">ASIN: B0CRVSFL3T</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CRVSFL3T/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Toaster Without Rotisserie Grilling</h2>
+<div class="asin">ASIN: B01NCPFE7R</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01NCPFE7R/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Kent 1300W Classic Fryer Black</h2>
+<div class="asin">ASIN: B09G75BMW4</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B09G75BMW4/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Butterfly Jet Elite 750 Watt Grinder</h2>
+<div class="asin">ASIN: B07DGD4Z4C</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07DGD4Z4C/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Machine Appliances Breakfast Sandwich Assorted</h2>
+<div class="asin">ASIN: B0BSX6774C</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BSX6774C/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Lifelong Llmg23 500 Watt Liquidizing Stainless</h2>
+<div class="asin">ASIN: B09X5C9VLK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B09X5C9VLK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Borosil Eazypull Chopper Vegetables Unbreakable</h2>
+<div class="asin">ASIN: B0CJ2MJFWK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CJ2MJFWK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Hl7756 Stainless Continuous Grinding Function</h2>
+<div class="asin">ASIN: B01GZSQJPA</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B01GZSQJPA/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Multichef Pro Breakfast Adjustable Temperature</h2>
+<div class="asin">ASIN: B0FNK7Z1JY</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FNK7Z1JY/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Inalsa Bullet 400 Watt Technology Chopper</h2>
+<div class="asin">ASIN: B07CVR2L5K</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07CVR2L5K/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Satpurush Refrigerator Organizer Containers Accessories</h2>
+<div class="asin">ASIN: B0DZT3QQ59</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DZT3QQ59/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Galaxy Electric Convection Circulation</h2>
+<div class="asin">ASIN: B0CBBLBDRK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CBBLBDRK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Btag Weighing Balanced Batteries Included</h2>
+<div class="asin">ASIN: B0D8Y9FNF3</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D8Y9FNF3/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Hr3705 10 Lightweight Stainless Accessories</h2>
+<div class="asin">ASIN: B07GDR7VZ3</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07GDR7VZ3/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Waffle Maker Iron Machine Non Stick</h2>
+<div class="asin">ASIN: B0H9GSTP5N</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0H9GSTP5N/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Philips Fryer Hd9200 90 Technology</h2>
+<div class="asin">ASIN: B09CTWFV5W</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B09CTWFV5W/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Instacuppa Electric Chopper Attachments Unbreakable</h2>
+<div class="asin">ASIN: B0B3G7ZTPW</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B3G7ZTPW/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Elegance Royal Casserole Insulation Chapati</h2>
+<div class="asin">ASIN: B0D8W7BG6S</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D8W7BG6S/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Bajaj Gx Mixer Grinder Function</h2>
+<div class="asin">ASIN: B0BB3SDD7J</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BB3SDD7J/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Skadioo Scale Kitchen Multipurpose Electronic</h2>
+<div class="asin">ASIN: B0D2NX639K</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D2NX639K/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Machine Appliances Breakfast Sandwich Assorted</h2>
+<div class="asin">ASIN: B0H6SCBBQG</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0H6SCBBQG/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Singer Combo Pack Iron Kettle</h2>
+<div class="asin">ASIN: B0GPQQZ4MC</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0GPQQZ4MC/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Ibell Wave10 Timer Temperature Control</h2>
+<div class="asin">ASIN: B0DPKY2CX6</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DPKY2CX6/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Shut Off Resistant Tempered Grilling</h2>
+<div class="asin">ASIN: B07N2MGB3G</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07N2MGB3G/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Prestige Iris Mixer Grinder Black</h2>
+<div class="asin">ASIN: B08CFJBZRK</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B08CFJBZRK/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Panca Stainless Medium Seperator Capacity</h2>
+<div class="asin">ASIN: B0DQCV2ZHV</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DQCV2ZHV/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Wonderchef Nutri Chop Stainless Vegetables Light Weight</h2>
+<div class="asin">ASIN: B0DXVVXV5S</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DXVVXV5S/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Rico Juicer Fruits Vegetables Anti Drip</h2>
+<div class="asin">ASIN: B0FMFQ6RK1</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FMFQ6RK1/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Stainless Esteem Heating Technology</h2>
+<div class="asin">ASIN: B07WNK1FFN</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07WNK1FFN/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Mini Mixer Grinder Small Size</h2>
+<div class="asin">ASIN: B0H9F3DNDS</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0H9F3DNDS/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Prestige Stainless Steel Kettle 1500 Watts</h2>
+<div class="asin">ASIN: B07VNFP3C2</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07VNFP3C2/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Induction Pressure Stainless Special</h2>
+<div class="asin">ASIN: B085G6LTTT</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B085G6LTTT/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Prestige Stainless Efficient Warranty Certified</h2>
+<div class="asin">ASIN: B0FDKCMH97</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FDKCMH97/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Amazon Brand Wringer Auto Fold Chestnut</h2>
+<div class="asin">ASIN: B0DF5LG8KZ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DF5LG8KZ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Treat Zone Automatic Stainless Appliance</h2>
+<div class="asin">ASIN: B0GVYT2D6P</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0GVYT2D6P/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Wonderchef Nutri Blend Watts Juicer Grinder</h2>
+<div class="asin">ASIN: B00W56GLOQ</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00W56GLOQ/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Activa Nutri Mixer Grinder Grinding</h2>
+<div class="asin">ASIN: B0BDZWMGZ1</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0BDZWMGZ1/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Usha Rapidmix 500 Watt Copper Grinder</h2>
+<div class="asin">ASIN: B08MXJYB2V</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B08MXJYB2V/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Cpensus Multipurpose Electric Non Stick Portable</h2>
+<div class="asin">ASIN: B0DPDH4H4Y</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DPDH4H4Y/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Nutripro Multipurpose Kettle Black Steel</h2>
+<div class="asin">ASIN: B0FFM54QNC</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0FFM54QNC/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Agaro Regency Automatic Machine Stainless</h2>
+<div class="asin">ASIN: B0CQ5B3Q9B</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0CQ5B3Q9B/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Pigeon Instamami Automatic Cordless Idiyappam</h2>
+<div class="asin">ASIN: B0GL1VW19T</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0GL1VW19T/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Blendlab Stainless Grinding Chutneys Smoothies</h2>
+<div class="asin">ASIN: B0G3WLGNDN</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0G3WLGNDN/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Volturi Containers Organization Accessories Transparent</h2>
+<div class="asin">ASIN: B0DK9NLF75</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0DK9NLF75/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Amazon Brand Stainless Induction Steamer</h2>
+<div class="asin">ASIN: B07P5TXZ9V</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B07P5TXZ9V/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Sm1515New Sandwich Floating Hinges 1000Watt</h2>
+<div class="asin">ASIN: B0B5RP43VN</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0B5RP43VN/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Orpat Hhb 100E Wob 250 Watt Blender</h2>
+<div class="asin">ASIN: B00A7PLVU6</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00A7PLVU6/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Milton Smart Egg Boiler Transparent</h2>
+<div class="asin">ASIN: B08TTRVWKY</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B08TTRVWKY/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Havells Resistant Blending Manufacturer Warranty</h2>
+<div class="asin">ASIN: B0D7VF87F4</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0D7VF87F4/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Philips Collection Hd4928 01 2100 Watt</h2>
+<div class="asin">ASIN: B00EDJJ7FS</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00EDJJ7FS/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Hr1832 00 Centrifugal Vegetables Quickclean</h2>
+<div class="asin">ASIN: B00S9BSJC8</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B00S9BSJC8/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Blendlab Including Stainless High Speed Smoothies</h2>
+<div class="asin">ASIN: B0F83RKHMM</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0F83RKHMM/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="visual">
+<div class="retailer">AMAZON</div>
+<div class="bag">🛍️</div>
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Bajaj Browning Controls Mid Cycle Warranty</h2>
+<div class="asin">ASIN: B0073QGKAS</div>
+<p>Current price, seller, availability and product details can be verified on the Amazon listing.</p>
+<a class="buy" href="https://www.amazon.in/dp/B0073QGKAS/?tag=dealguider04-21" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
 </div>
 </article>
 
@@ -115,12 +1497,10 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 
 <footer class="footer">
 <div class="footer-in">
-
 <div>
 <img class="footer-logo" src="assets/dealguide-header-logo.png" alt="DealGuide India">
 <p>Your trusted product guide for smart shopping decisions.</p>
 </div>
-
 <div>
 <h3>Quick Links</h3>
 <a href="index.html">Home</a>
@@ -129,7 +1509,6 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 <a href="stage2/privacy.html">Privacy Policy</a>
 <a href="stage2/terms.html">Terms & Conditions</a>
 </div>
-
 <div>
 <h3>Explore Products</h3>
 <a href="flipkart-products.html">Flipkart Products</a>
@@ -137,7 +1516,6 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 <a href="categories-index.html">Comparisons</a>
 <a href="category-guides/index.html">Buying Guides</a>
 </div>
-
 <div>
 <h3>Important</h3>
 <a href="stage2/disclosure.html">Affiliate Disclosure</a>
@@ -145,9 +1523,7 @@ h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
 <a href="stage2/privacy.html">Privacy</a>
 <a href="stage2/terms.html">Terms</a>
 </div>
-
 </div>
 </footer>
-
 </body>
 </html>
