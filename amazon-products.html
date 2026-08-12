@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Amazon Products — DealGuide India</title>
+<meta name="description" content="Explore selected Amazon products with product information and affiliate links.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/dealguide-header-logo.png">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f7f9fc;color:#12213d;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.top{height:34px;background:#06224a;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 4%;font-size:12px}
+.top span{margin-right:22px}
+.brandbar{background:#fff;border-bottom:1px solid #e3e7ee}
+.brandbar img{display:block;width:100%;height:150px;object-fit:contain;padding:12px}
+.nav{height:50px;background:#06224a;color:#fff;display:flex;align-items:center;padding:0 4%;gap:4px}
+.nav a{color:#fff;text-decoration:none;padding:9px 12px;font-size:12px;font-weight:800;border-radius:6px}
+.nav a:hover{background:#16457d}
+.search{margin-left:auto;background:#fff;border-radius:8px;overflow:hidden;display:flex;width:260px}
+.search input{width:100%;border:0;outline:0;padding:9px 11px;font-size:12px}
+.search button{border:0;background:#ff6f00;color:#fff;width:42px}
+.wrap{max-width:1200px;margin:auto;padding:0 18px}
+.intro{background:#fff;border:1px solid #e0e6ee;border-radius:15px;padding:22px;margin:18px 0}
+.intro h1{margin:0 0 7px;font-size:27px}
+.intro p{margin:0;color:#738094;font-size:12px;line-height:1.6}
+.notice{margin-top:12px;padding:11px;background:#fff5cf;border:1px solid #e7d88e;border-radius:9px;font-size:11px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:18px 0 28px}
+.card{background:#fff;border:1px solid #e0e6ee;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px rgba(10,40,80,.07)}
+.image{height:320px;display:flex;align-items:center;justify-content:center;background:#fff;padding:20px}
+.image img{max-width:100%;max-height:100%;object-fit:contain}
+.info{padding:18px}
+.label{font-size:10px;font-weight:900;color:#778397;text-transform:uppercase}
+h2{font-size:17px;line-height:1.4;margin:7px 0 10px}
+.text{font-size:12px;color:#738094;line-height:1.6}
+.buy{display:block;margin-top:14px;background:#ff7100;color:#fff;text-align:center;text-decoration:none;padding:11px;border-radius:8px;font-size:12px;font-weight:900}
+.footer{background:#06224a;color:#dce8f8;margin-top:28px;padding:28px 4%}
+.footer-in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}
+.footer h3{font-size:13px;margin:0 0 10px}
+.footer a{display:block;color:#dce8f8;text-decoration:none;font-size:11px;margin:6px 0}
+.footer p{font-size:11px;color:#9eb1c9;line-height:1.6}
+.footer-logo{width:170px;max-width:100%}
+@media(max-width:800px){
+.top{font-size:9px;padding:0 10px}.top span:nth-child(n+2){display:none}
+.nav{height:auto;min-height:76px;padding:5px 8px;display:grid;grid-template-columns:repeat(5,1fr);gap:3px}
+.nav a{font-size:9px;text-align:center;padding:8px 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.search{grid-column:1/-1;width:100%;margin:2px 0 0}
+.grid{grid-template-columns:1fr}
+.footer-in{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+<span>🇮🇳 India's Trusted Product Guide</span>
+<span>★ Honest Reviews</span>
+<span>▣ Buying Guides</span>
+<span>◆ Smart Picks</span>
+<span>Independent Shopping Guide</span>
+</div>
+
+<div class="brandbar">
+<img src="assets/dealguide-header-logo.png" alt="DealGuide India">
+</div>
+
+<nav class="nav">
+<a href="index.html">⌂ Home</a>
+<a href="categories-index.html">Categories</a>
+<a href="category-guides/index.html">Buying Guides</a>
+<a href="flipkart-products.html">Flipkart Products</a>
+<a href="amazon-products.html">Amazon Products</a>
+<div class="search">
+<input aria-label="Search" placeholder="Search...">
+<button>⌕</button>
+</div>
+</nav>
+
+<main class="wrap">
+
+<section class="intro">
+<h1>Explore Amazon Products</h1>
+<p>Discover selected products with practical information and direct links to current Amazon listings. Prices, sellers and availability may change and should be verified on Amazon before purchase.</p>
+<div class="notice">ⓘ Some links may be affiliate links. See our <a href="stage2/disclosure.html">Affiliate Disclosure</a>.</div>
+</section>
+
+<div class="grid">
+
+<article class="card">
+<div class="image">
+<img src="assets/products-realistic.jpg" alt="Amazon product" loading="lazy">
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Featured Amazon Product</h2>
+<p class="text">View the current Amazon listing for product details, price, seller and availability.</p>
+<a class="buy" href="https://link.amazon/B0ciqqVc0" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+<article class="card">
+<div class="image">
+<img src="assets/products-realistic.jpg" alt="Amazon product" loading="lazy">
+</div>
+<div class="info">
+<div class="label">Amazon Product</div>
+<h2>Featured Amazon Product</h2>
+<p class="text">View the current Amazon listing for product details, price, seller and availability.</p>
+<a class="buy" href="https://link.amazon/B07aw8IXt" target="_blank" rel="nofollow sponsored noopener">View on Amazon →</a>
+</div>
+</article>
+
+</div>
+</main>
+
+<footer class="footer">
+<div class="footer-in">
+
+<div>
+<img class="footer-logo" src="assets/dealguide-header-logo.png" alt="DealGuide India">
+<p>Your trusted product guide for smart shopping decisions.</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="stage2/about.html">About Us</a>
+<a href="stage2/contact.html">Contact Us</a>
+<a href="stage2/privacy.html">Privacy Policy</a>
+<a href="stage2/terms.html">Terms & Conditions</a>
+</div>
+
+<div>
+<h3>Explore Products</h3>
+<a href="flipkart-products.html">Flipkart Products</a>
+<a href="amazon-products.html">Amazon Products</a>
+<a href="categories-index.html">Comparisons</a>
+<a href="category-guides/index.html">Buying Guides</a>
+</div>
+
+<div>
+<h3>Important</h3>
+<a href="stage2/disclosure.html">Affiliate Disclosure</a>
+<a href="stage2/contact.html">Contact</a>
+<a href="stage2/privacy.html">Privacy</a>
+<a href="stage2/terms.html">Terms</a>
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>
