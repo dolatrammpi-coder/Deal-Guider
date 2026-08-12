@@ -44,6 +44,94 @@
   .nav a,.more-nav summary{font-size:8px!important}
   .footer-logo{width:130px!important}
 }
+
+.marketplace-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.marketplace-card{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  background:#fff;
+  border:1px solid #e0e6ee;
+  border-radius:14px;
+  padding:18px;
+  text-decoration:none;
+  color:#12213d;
+  box-shadow:0 4px 14px #092b5808;
+  transition:.2s;
+}
+.marketplace-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 22px #092b5815;
+}
+.market-icon{
+  width:54px;
+  height:54px;
+  min-width:54px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:#f5f7fa;
+  font-size:28px;
+}
+.marketplace-card h3{
+  margin:0 0 5px;
+  font-size:15px;
+}
+.marketplace-card p{
+  margin:0 0 8px;
+  color:#748196;
+  font-size:11px;
+}
+.marketplace-card span{
+  color:#0670db;
+  font-size:11px;
+  font-weight:900;
+}
+.search-results{
+  display:none;
+  max-width:1200px;
+  margin:8px auto 0;
+  padding:0 18px;
+}
+.search-results.active{
+  display:block;
+}
+.search-result-box{
+  background:#fff;
+  border:1px solid #dfe6ef;
+  border-radius:12px;
+  padding:12px;
+  box-shadow:0 6px 20px #092b5810;
+}
+.search-result-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:9px 4px;
+  border-bottom:1px solid #edf0f4;
+  text-decoration:none;
+  color:#12213d;
+}
+.search-result-item:last-child{border-bottom:0}
+.search-result-item strong{font-size:12px}
+.search-result-item small{color:#7b8798;font-size:10px}
+.search-empty{
+  padding:10px;
+  color:#718096;
+  font-size:12px;
+}
+@media(max-width:650px){
+  .marketplace-grid{grid-template-columns:1fr}
+  .marketplace-card{padding:14px}
+  .marketplace-card h3{font-size:13px}
+  .search-results{padding:0 12px}
+}
+
 </style>
 </head>
 <body>
@@ -65,14 +153,67 @@
 <a href="stage2/contact.html">Contact</a><a href="stage2/privacy.html">Privacy</a>
 <a href="stage2/disclosure.html">Disclosure</a><a href="stage2/terms.html">Terms</a>
 </div></details>
-<div class="search"><input aria-label="Search" placeholder="Search..."><button>⌕</button></div>
+<div class="search"><input id="dealguide-search" aria-label="Search products" placeholder="Search products, brands or categories..."><button id="dealguide-search-btn" type="button">⌕</button></div>
+
 </nav>
+
+<div id="search-results" class="search-results" aria-live="polite"></div>
+
 <main class="wrap">
+
 <section class="hero"><a href="categories-index.html" aria-label="Explore DealGuide categories"><img src="assets/hero-realistic.jpg" alt="Smart shopping with phones, laptop, headphones, smartwatch and camera"></a></section>
 <section class="section"><div class="section-head"><div><h2>▦ Shop by Category</h2><p>Browse popular categories and find the right product</p></div><a class="view" href="categories-index.html">View all categories →</a></div><img class="category-image" src="assets/categories-realistic.jpg" alt="Popular product categories"></section>
+
+<section class="section marketplace-section" id="marketplace-products">
+  <div class="section-head">
+    <div>
+      <h2>🛍️ Explore Products</h2>
+      <p>Discover selected products from trusted marketplaces</p>
+    </div>
+  </div>
+
+  <div class="marketplace-grid">
+    <a class="marketplace-card flipkart-card" href="flipkart-products.html">
+      <div class="market-icon">🛒</div>
+      <div>
+        <h3>Explore Flipkart Products</h3>
+        <p>Browse our selected Flipkart product recommendations</p>
+        <span>Explore Products →</span>
+      </div>
+    </a>
+
+    <a class="marketplace-card amazon-card" href="amazon-products.html">
+      <div class="market-icon">📦</div>
+      <div>
+        <h3>Explore Amazon Products</h3>
+        <p>Browse our selected Amazon product recommendations</p>
+        <span>Explore Products →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="explore-products">
+<div class="section-head">
+<div>
+<h2>🛍️ Explore Products</h2>
+<p>Browse selected products from shopping platforms</p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">
+<a href="flipkart-products.html" style="background:#fff;border:1px solid #e0e6ee;border-radius:12px;padding:18px;text-decoration:none;color:#12213d">
+<strong>Explore Flipkart Products →</strong>
+<br><small style="color:#778397">Browse selected Flipkart listings</small>
+</a>
+<a href="amazon-products.html" style="background:#fff;border:1px solid #e0e6ee;border-radius:12px;padding:18px;text-decoration:none;color:#12213d">
+<strong>Explore Amazon Products →</strong>
+<br><small style="color:#778397">Browse selected Amazon listings</small>
+</a>
+</div>
+</section>
 <section class="section" id="top"><div class="section-head"><div><h2>🔥 Top Picks for You</h2><p>Our handpicked product recommendations</p></div><a class="view" href="categories-index.html">View all products →</a></div>
 <div class="real-grid">
-<article class="real-card"><img src="assets/visual-case.svg" alt="Spigen Liquid Air Case"><div class="info"><h3>Spigen Liquid Air Case</h3><a class="btn" href="products/spigen-liquid-air-case.html">View Product →</a></div></article>
+<article class="real-card"><img src="assets/product-spigen-liquid-air.jpg" alt="Spigen Liquid Air Case" loading="lazy" onerror="this.src=\'assets/visual-case.svg\'"><div class="info"><h3>Spigen Liquid Air Case</h3><a class="btn" href="products/spigen-liquid-air-case.html">View Product →</a></div></article>
 <article class="real-card"><img src="assets/visual-laptop.svg" alt="Laptop"><div class="info"><h3>Lenovo IdeaPad Slim 3</h3><a class="btn" href="products/lenovo-ideapad-slim-3.html">View Product →</a></div></article>
 <article class="real-card"><img src="assets/visual-headphones.svg" alt="Headphones"><div class="info"><h3>boAt Rockerz 550</h3><a class="btn" href="products/boat-rockerz-550.html">View Product →</a></div></article>
 
@@ -86,4 +227,90 @@
 </div><div class="features"><div class="feature"><b>🛡️ Honest Reviews</b><small>Real research, no fake claims</small></div><div class="feature"><b>⚖️ Easy Comparisons</b><small>Compare features & prices easily</small></div><div class="feature"><b>📖 Buying Guides</b><small>Expert guides for smart decisions</small></div><div class="feature"><b>🏷️ Best Deals</b><small>Find latest offers & discounts</small></div></div><div class="disc">ⓘ Some product links may be affiliate links. Product prices, seller details and availability can change. <a href="stage2/disclosure.html">Read Disclosure →</a></div></section>
 </main>
 <footer class="footer"><div class="footer-in"><div><img class="footer-logo" src="assets/dealguide-header-logo.png" alt="DealGuide India"><p>Your trusted product guide for smart shopping decisions.</p></div><div><h3>Quick Links</h3><a href="stage2/about.html">About Us</a><a href="stage2/contact.html">Contact Us</a><a href="stage2/privacy.html">Privacy Policy</a><a href="stage2/terms.html">Terms & Conditions</a></div><div><h3>Popular Categories</h3><a href="categories/mobile-accessories.html">Smartphones</a><a href="categories/laptops.html">Laptops</a><a href="categories/headphones.html">Headphones</a><a href="categories/smartwatches.html">Smartwatches</a><a href="categories/tvs.html">TVs</a></div><div><h3>Important</h3><a href="category-guides/index.html">Buying Guides</a><a href="categories-index.html">Comparisons</a><a href="#top">Top Picks</a><a href="stage2/disclosure.html">Affiliate Disclosure</a></div></div></footer>
+
+<script>
+const dealguideSearchData = [
+  ["Spigen Liquid Air Case","Case & Accessories","products/spigen-liquid-air-case.html"],
+  ["Lenovo IdeaPad Slim 3","Laptops","products/lenovo-ideapad-slim-3.html"],
+  ["boAt Rockerz 550","Headphones","products/boat-rockerz-550.html"],
+  ["LG 43-inch 4K UHD TV","TVs","products/lg-43-inch-4k-uhd-tv.html"],
+
+  ["Acer EK240Y","Monitors","products/acer-ek240y.html"],
+  ["Amazfit Active 2","Smartwatches","products/amazfit-active-2.html"],
+  ["Anker Soundcore Q20i","Headphones","products/anker-soundcore-q20i.html"],
+  ["Apple 20W USB-C Power Adapter","Chargers & Cables","products/apple-20w-usb-c-power-adapter.html"],
+  ["BenQ GW2490","Monitors","products/benq-gw2490.html"],
+  ["JBL Flip 6","Speakers","products/jbl-flip-6.html"],
+  ["JBL Go 4","Speakers","products/jbl-go-4.html"],
+  ["JBL Tune 770NC","Headphones","products/jbl-tune-770nc.html"],
+  ["JBL Wave Buds","Earbuds","products/jbl-wave-buds.html"],
+  ["Lenovo Tab M11","Tablets","products/lenovo-tab-m11.html"],
+  ["Logitech G102","Gaming Mouse","products/logitech-g102.html"],
+  ["OnePlus Nord Buds 3","Earbuds","products/oneplus-nord-buds-3.html"],
+  ["OnePlus Pad Go","Tablets","products/oneplus-pad-go.html"],
+  ["OnePlus Watch 2R","Smartwatches","products/oneplus-watch-2r.html"],
+  ["Philips Trimmer","Grooming","products/philips-trimmer.html"],
+  ["Pigeon Electric Kettle","Kitchen","products/pigeon-electric-kettle.html"],
+  ["Portronics Laptop Stand","Laptop Accessories","products/portronics-laptop-stand.html"],
+  ["Razer DeathAdder Essential","Gaming Mouse","products/razer-deathadder-essential.html"],
+  ["Redragon K551","Gaming Keyboards","products/redragon-k551.html"],
+  ["Samsung 24-inch IPS Monitor","Monitors","products/samsung-24-inch-ips-monitor.html"],
+  ["Samsung Galaxy Watch7","Smartwatches","products/samsung-galaxy-watch7.html"],
+  ["Sony SRS-XB100","Speakers","products/sony-srs-xb100.html"],
+  ["Sony WF-C510","Earbuds","products/sony-wf-c510.html"],
+  ["Sony WH-CH520","Headphones","products/sony-wh-ch520.html"],
+  ["Spigen Liquid Air Case","Mobile Accessories","products/spigen-liquid-air-case.html"],
+  ["Strauss Yoga Mat","Fitness","products/strauss-yoga-mat.html"],
+  ["TCL 43-inch 4K Google TV","TVs","products/tcl-43-inch-4k-google-tv.html"],
+  ["Wonderchef Nutri-Blend","Kitchen","products/wonderchef-nutri-blend.html"]
+];
+
+const searchInput = document.getElementById("dealguide-search");
+const searchButton = document.getElementById("dealguide-search-btn");
+const results = document.getElementById("search-results");
+
+function runDealGuideSearch(){
+  const q = searchInput.value.trim().toLowerCase();
+
+  if(!q){
+    results.classList.remove("active");
+    results.innerHTML="";
+    return;
+  }
+
+  const found = dealguideSearchData.filter(x =>
+    (x[0]+" "+x[1]).toLowerCase().includes(q)
+  ).slice(0,8);
+
+  results.classList.add("active");
+
+  if(!found.length){
+    results.innerHTML =
+      '<div class="search-result-box"><div class="search-empty">No matching product found. Try another brand, product or category.</div></div>';
+    return;
+  }
+
+  results.innerHTML =
+    '<div class="search-result-box">' +
+    found.map(x =>
+      '<a class="search-result-item" href="'+x[2]+'">' +
+      '<span><strong>'+x[0]+'</strong><br><small>'+x[1]+'</small></span>' +
+      '<span>→</span></a>'
+    ).join("") +
+    '</div>';
+}
+
+searchInput.addEventListener("input", runDealGuideSearch);
+searchInput.addEventListener("keydown", e => {
+  if(e.key === "Enter") runDealGuideSearch();
+});
+searchButton.addEventListener("click", runDealGuideSearch);
+
+document.addEventListener("click", e => {
+  if(!e.target.closest(".search") && !e.target.closest("#search-results")){
+    results.classList.remove("active");
+  }
+});
+</script>
+
 </body></html>
